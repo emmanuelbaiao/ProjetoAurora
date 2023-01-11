@@ -1,0 +1,44 @@
+<!-- <nav class="nav nav-pills d-flex p-3 gap-3 align-self-center">
+  <button class="btn btn-primary navbar-btn" id="cadastro-clientes">Cadastrar</button>
+  <button class="btn btn-primary navbar-btn" id="visualizar">Visualizar cadastros</button>
+</nav> -->
+<section class="content-box p-3">
+  <div id="form-box" class="d-flex flex-column justify-content-center align-items-center">
+    <h1 class="fs-1">Cadastro de Usuários</h1>
+    <form action="/usuarios/save" method="post" id="form-cadastro" class="w-50 p-3">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input class="form-control" type="text" name="nome" id="nome" required/>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="cpf">CPF:</label>
+        <input class="form-control" type="text" name="cpf" id="cpf" required/>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="email">Email:</label>
+        <input class="form-control" type="email" name="email" id="email" required/>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="dataNasc">Data de Nascimento:</label>
+        <input class="form-control" type="date" name="dataNasc" id="data-nasc"/>
+      </div>
+      <div class="m-3 d-flex justify-content-center">
+        <select class="form-select-sm" name="genero">
+          <option selected>Genero</option>
+          <option value="Homem">Homem</option>
+          <option value="Mulher">Mulher</option>
+      </select>
+      </div>
+      
+      <div class="mb-3 d-flex flex-column">
+        <label class="form-label" for="senha">Senha:</label>
+        <input class="form-control" type="password" min="0" max="20" name="senha" id="senha"/>
+        <label class="form-label" for="csenha">Confirme a senha:</label>
+        <input class="form-control" type="password" min="0" max="20" name="csenha" id="csenha"/>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </div>
+
+</section>
